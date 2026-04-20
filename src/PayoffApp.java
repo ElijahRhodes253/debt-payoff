@@ -7,6 +7,9 @@ public class PayoffApp {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         
+        CreditCard amex = new CreditCard("American Exrpess", 18.4, 402);
+        System.out.println(amex);
+        
         List<Double> aprs = new ArrayList<>();
 
         while(scan.hasNextLine()) {
