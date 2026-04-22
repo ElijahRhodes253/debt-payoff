@@ -1,4 +1,4 @@
-public class CreditCard{//} implements Comparable<APR>{
+public class CreditCard implements Comparable<CreditCard>{
 
     private String name;
     private double APR;
@@ -57,11 +57,12 @@ public class CreditCard{//} implements Comparable<APR>{
     {
         return name + ": APR: " + APR + "% Balance: $" + bal;
     }
-/* 
-    public int compareTo()
+ 
+    public int compareTo(CreditCard other)
     {
-        
+        if(this.APR < other.APR){return -1;}
+        else if(this.APR > other.APR){return 1;}
         return 0;
     }
-    */
+    
 }

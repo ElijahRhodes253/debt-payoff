@@ -8,7 +8,7 @@ public class PayoffApp {
         Scanner scan = new Scanner(System.in);
         
         CreditCard amex = new CreditCard("American Exrpess", 18.4, 402);
-        System.out.println(amex);
+        //System.out.println(amex);
         
         List<Double> aprs = new ArrayList<>();
         List<CreditCard> card = new ArrayList<>();
@@ -34,6 +34,8 @@ public class PayoffApp {
             System.out.println(name + ": " + "APR: " + aprString + " Balance: " + balanceString);
             */
         }
+
+        Collections.sort(card, Collections.reverseOrder());
         for(CreditCard x : card)
         {
             System.out.println(x);
